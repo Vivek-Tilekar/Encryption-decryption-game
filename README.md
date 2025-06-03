@@ -37,3 +37,14 @@
 
 - **Decrypting a File**: After receiving your encrypted file, try to decrypt it using the provided hints. If you can't figure it out, use the automatic decryption option.
 
+## Images
+
+![image](https://github.com/user-attachments/assets/6da00c5a-d010-4677-9c8d-8772ea3c21fd)
+
+![image](https://github.com/user-attachments/assets/9bb42076-e7a3-4238-971e-4f222b4c62d2)
+
+![image](https://github.com/user-attachments/assets/7e793757-ddb5-4a3d-8eb7-3a021bd8b0b1)
+
+
+
+
