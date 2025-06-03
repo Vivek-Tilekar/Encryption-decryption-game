@@ -1,0 +1,180 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26-Sept-2024, 11:29:14 am
+    Author     : user
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    /* display: flow; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+form {
+    width: 60%;
+    height: 80%;
+    background-image: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto auto;
+}
+
+.inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    /* flex-basis: 50 */
+    margin-bottom: 80px;
+}
+
+
+.inner-container input {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0;
+    background-color: brown;
+    border: 1px solid red;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.inputbox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 50%;
+    /* filter: brightness(50%); */
+}
+
+.inputbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark overlay (50% black opacity) */
+    z-index: 1;  /* Ensure it’s behind the text */
+}
+
+.inputbox h1 {
+    position: relative;
+    z-index: 2;  /* Ensure the text appears above the overlay */
+    color: #fff;  /* Bright white color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Optional: Add some shadow for emphasis */
+    /* font-size: 24px;  Adjust text size as needed */
+    font-weight: bold;
+    text-align: center;  /* Center the text */
+    /* padding-top: 50px;  Adjust to center vertically */
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+
+#type {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color:cadetblue;
+    /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+}
+
+.message {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    font-size: 25px;
+    left: 40%;
+}
+
+
+/* .custom-file-upload {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-file-upload button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: left;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-file-upload button:hover {
+    background-color: #388e3c;
+}
+.custom-file-upload button::before {
+    content: "\f0e4";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+.custom-file-upload input[type="file"]
+              ::-webkit-file-name-text {
+    color: black;
+} */
+
+.inputbox1 {
+    background-image: url("./encryption.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* color: #fff;
+    text-shadow: -0.01em -0.01em 0.01em #fff;
+	animation: rise 2s ease-in-out 0.5s forwards; */
+}
+
+.inputbox2 {
+    background-image: url("./decryption.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* color: #fff;
+    text-shadow: -0.01em -0.01em 0.01em #fff;
+	animation: rise 2s ease-in-out 0.5s forwards; */
+}
+
+@keyframes rise {
+	to {
+		text-shadow: 0em 0.01em #ff5, 0em 0.02em #ff5, 0em 0.02em 0.03em #ff5,
+			-0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
+			-0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
+			-0.03em -0.03em 0.03em #000;
+		transform: translateY(-0.025em) translateX(0.04em);
+	}
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Styled File Upload</title>
+    <style>
+        .custom-file-upload {
+            position: relative;
+            display: inline-block;
+        }
+
+        .custom-file-upload button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+            text-align: left;
+            transition: background-color 0.2s ease-in-out;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .custom-file-upload button:hover {
+            background-color: #388e3c;
+        }
+        .custom-file-upload button::before {
+            content: "\f0e4";
+            font-family: FontAwesome;
+            margin-right: 5px;
+        }
+        .custom-file-upload input[type="file"]
+                      ::-webkit-file-name-text {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-file-upload">
+        <input type="file" id="fileInput" 
+               style="opacity: 0;">
+        <button>Choose File</button>
+    </div>
+
+    <script>
+        const fileInput = 
+              document.getElementById('fileInput');
+        const customButton = 
+              document.querySelector('.custom-file-upload button');
+
+        customButton.addEventListener('click', () => {
+            fileInput.click();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 90vw;
+    border: 1px solid #553c9a ;
+    padding: 40px;
+    height: 235%;
+    margin: 10px;
+}
+
+.container a {
+  display: block;
+  width: 115px;
+  height: 25px;
+  background: #4E9CAF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+h1 {
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.steps {
+    list-style: none;
+}
+
+.steps span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.olType {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 20px;
+    margin: 10px;
+}
+
+p {
+    font-size: 20px;
+    width: 85%;
+}
+
+form {
+    /* background-color: #15172b; */
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+    width: 420px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+  
+.ic1 {
+    margin-top: 40px;
+}
+  
+.ic2 {
+  margin-top: 30px;
+}
+  
+.input {
+    background-color: #efefef;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+  
+.cut {
+    /* background-color: #15172b; */
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+  
+.cut-short {
+    width: 50px;
+}
+  
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+  
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+  
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+  
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+  
+.input:focus ~ .placeholder {
+    color: #dc2f55;
+}
+  
+form button {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+
+.textInput {
+    margin: 10px 0;
+}
+
+.textInput label {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.keyMessage {
+    font-size: 20px;
+}
+
+.message {
+    
+    margin: 20px auto;
+    color: red;
+    font-size: 25px;
+    left: 40%;
+}
+
+#key {
+    border-radius: 10px;
+    border: 0.5px solid;
+    /* color: red; */
+    /* height: 25px; */
+    padding: 9px;
+}
+
+
+/*.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}*/
+
+input[type="file"]::file-selector-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  
